@@ -1,44 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABC LABORATORIO</title>
-    
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<div class="card" style="width: 18rem;">
-  <img src="../ABC_Laboratorio/a.jpg" class="card-img-top" alt="a.jpg">
-  <div class="card-body">
-    <h5 class="card-title">Letra A</h5>
-    <p class="card-text">Soy la letra a</p>
-    <a href="#" class="btn btn-primary">Voltear</a>
+<nav class="navbar navbar-dark bg-dark px-4 py-3">
+  <div class="container-fluid d-flex justify-content-between">
+    <span class="navbar-brand">ABC LABORATORIO</span>
+    <span class="navbar-text text-white">
+      Letras vistas: <span id="contador" class="fw-bold">0</span>/26
+    </span>
+  </div>
+</nav>
+<div class="container text-center my-4">
+  <button class="btn btn-outline-primary btn-lg px-4 me-2" onclick="filtrar('todas')">Todas</button>
+  <button class="btn btn-outline-success btn-lg px-4" onclick="filtrar('vocales')">Vocales</button>
+</div>
+
+<div class="card" data-tipo="vocal" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>A</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://img.magnific.com/vector-gratis/avion-pasajeros-dibujos-animados-colorido_1308-165840.jpg?semt=ais_hybrid&w=740&q=80" alt="Letra A" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Letra A</h5>
+      <p class="card-text">Soy la letra A de Avión</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
   </div>
 </div>
 
-<div class="card" style="width: 18rem;">
-  <img src="../ABC_Laboratorio/a.jpg" class="card-img-top" alt="a.jpg">
-  <div class="card-body">
-    <h5 class="card-title">Letra B</h5>
-    <p class="card-text">Soy la letra B</p>
-    <a href="#" class="btn btn-primary">Voltear</a>
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>B</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://i.pinimg.com/736x/3a/f6/55/3af655c915603fb9c87f2f125caba4f4.jpg" alt="Letra B" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Letra B</h5>
+      <p class="card-text">Soy la letra B de Ballena</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
   </div>
 </div>
 
-<div class='card' data-tipo='vocal' onclick='voltear(this)'>
-<div class='card-frente'>
-<h1>A</h1>
-</div>
-<div class='card-dorso'>
-<img src='URL_de_internet' alt='Aguacate'>
-<h3>Aguacate</h3>
-</div>
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>C</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://img.magnific.com/vector-premium/caracter-cara-coche-divertido-emoticon-coche-azul-sonrie-iconos-ilustracion-vectorial_1041562-1767.jpg?semt=ais_hybrid&w=740&q=80" alt="Letra C" class="card-img-top"> 
+    <div class="card-body">
+      <h5 class="card-title">Letra C</h5>
+      <p class="card-text">Soy la letra C de Carro</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
 </div>
 
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>D</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://previews.123rf.com/images/stolenpencil/stolenpencil1607/stolenpencil160700034/60182656-my-dear-diary-cartoon-illustration-isolated-on-white.jpg" alt="Letra D" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Letra D</h5>
+      <p class="card-text">Soy la letra D de Diario</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="vocal" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>E</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://i.pinimg.com/736x/14/fb/9d/14fb9d3ff990c120b018fc6f48a6b2c0.jpg" alt="Letra E" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Letra E</h5>
+      <p class="card-text">Soy la letra E de Elefante</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>F</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://www.shutterstock.com/image-illustration/illustration-isolated-cartoon-flute-melody-260nw-95219710.jpg" alt="Letra F" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Letra F</h5>
+      <p class="card-text">Soy la letra F de Flauta</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>G</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://media.istockphoto.com/id/1097490360/es/vector/ilustraci%C3%B3n-de-vector-de-gato-negro-lindo.jpg?s=612x612&w=0&k=20&c=1k-DYwTzk3OsYthGjAKr-32V66ccAyrP9nfXosOnu0w=" alt="Letra G" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Letra G</h5>
+      <p class="card-text">Soy la letra G de Gato</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>H</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwu0YZw47bSGb_yhHUq8U6X1dsvXj5hcXx6g&s" alt="Letra H" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Letra H</h5>
+      <p class="card-text">Soy la letra H de Huevo</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="vocal" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>I</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqY7_rRDt6alvJB1HCQoDhrWqKGlh9YvDshQ&s" alt="Letra I" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Letra I</h5>
+      <p class="card-text">Soy la letra I de Iglú</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEfYxKxG0FVlsJL5pNlyT2bRjXh0JMhjY6hW+ALEwIH memudahkan+nvJaDHga3lsp4nC" crossorigin="anonymous"></script>
 </body>
