@@ -1,9 +1,110 @@
-.card {
-    transition: transform 0.6s ease;
-    transform-style: preserve-3d;
+/* TARJETA PRINCIPAL */
+.card[data-tipo] {
+    position: relative; /* permite posicionar frente y dorso encima */
+    width: 18rem;
+    height: 25rem;
+    perspective: 1000px; /* da efecto 3D al giro (IMPORTANTE) */
+    border: none !important;
+    background: transparent !important;
+    display: inline-block !important; /* hace que se acomoden en fila */
+    cursor: pointer;  /* cambia el mouse a manito */
+    margin: 20px;  /* espacio entre tarjetas */
 }
 
-/* Clase que agregará JavaScript */
-.card.volteada {
-    transform: rotateY(180deg);
+/* FRENTE Y DORSO (BASE) */
+.card[data-tipo] .card-frente,
+.card[data-tipo] .card-dorso {
+    position: absolute; /* se montan uno encima del otro */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* oculta la parte trasera al girar, evita que se vea al revés */
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* animación suave del giro */
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.375rem;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+/* FRENTE */
+.card[data-tipo] .card-frente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    transform: rotateY(0deg);  /* posición inicial (visible) */
+}
+
+/* ESTILO DE LA LETRA GRANDE */
+.card[data-tipo] .card-frente h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #0d6efd;
+    margin: 0;
+}
+
+/* DORSO */
+.card-dorso {
+    transform: rotateY(180deg); /* empieza girado (oculto) */
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMAGEN DEL DORSO */
+.card-dorso img {
+    height: 180px;
+    object-fit: cover; /* recorta sin deformar la imagen */
+}
+
+.card-dorso .card-body {
+    flex: 1; /* ocupa espacio restante */
+}
+
+/* EFECTO DE VOLTEO: Cuando la tarjeta tiene clase "volteada", el frente gira */
+.card[data-tipo].volteada .card-frente { 
+    transform: rotateY(-180deg);
+}
+/* Cuando está volteada, el dorso aparece */
+.card[data-tipo].volteada .card-dorso {
+    transform: rotateY(0deg);
+}
+
+/* OCULTAR ELEMENTOS */
+.card[data-tipo].oculto {
+    display: none !important;
+}
+
+/*  EFECTOS HOVER */
+.card[data-tipo]:hover {
+    transform: translateY(-8px);  /* sube la tarjeta */
+    transition: .3s;
+}
+/* sombra al pasar el mouse*/
+.card[data-tipo]:hover .card-frente,
+.card[data-tipo]:hover .card-dorso {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
+}
+
+/* FILTRO DE OCULTAR: No mostrar el elemento con display none. */
+.oculto {
+    display: none !important;
+}
+
+/* SECCIÓN EQUIPO */
+section .card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .12);
+    transition: .3s;
+}
+
+section .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .2);
+}
+
+section h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
 }
