@@ -9,6 +9,14 @@
 </head>
 <body>
 
+<nav class="navbar navbar-dark bg-dark px-4 py-3">
+  <div class="container-fluid d-flex justify-content-between">
+    <span class="navbar-brand">ABC LABORATORIO</span>
+    <span class="navbar-text text-white">
+      Letras vistas: <span id="contador" class="fw-bold">0</span>/26
+    </span>
+  </div>
+</nav>
 <div class="container text-center my-4">
   <button class="btn btn-outline-primary btn-lg px-4 me-2" onclick="filtrar('todas')">Todas</button>
   <button class="btn btn-outline-success btn-lg px-4" onclick="filtrar('vocales')">Vocales</button>
@@ -19,10 +27,10 @@
     <h1>A</h1>
   </div>
   <div class="card-dorso">
-    <img src="../ABC_Laboratorio/a.jpg" class="card-img-top" alt="a.jpg">
+    <img src="../ABC_Laboratorio/img/a.png" class="card-img-top" alt="a.png">
     <div class="card-body">
       <h5 class="card-title">Letra A</h5>
-      <p class="card-text">Soy la letra a</p>
+      <p class="card-text">Soy la letra A de Avión</p>
       <button class="btn btn-primary w-100">Voltear</button>
     </div>
   </div>
@@ -33,14 +41,385 @@
     <h1>B</h1>
   </div>
   <div class="card-dorso">
-    <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=300&auto=format&fit=crop&q=80" class="card-img-top" alt="Banano">
+    <img src="../ABC_Laboratorio/img/b.png" class="card-img-top" alt="b.png">
     <div class="card-body">
       <h5 class="card-title">Letra B</h5>
-      <p class="card-text">Soy la letra b</p>
+      <p class="card-text">Soy la letra B de Ballena</p>
       <button class="btn btn-primary w-100">Voltear</button>
     </div>
   </div>
 </div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>C</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="../ABC_Laboratorio/img/c.png" class="card-img-top" alt="c.png">
+    <div class="card-body">
+      <h5 class="card-title">Letra C</h5>
+      <p class="card-text">Soy la letra C de Carro</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>D</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="../ABC_Laboratorio/img/d.png" class="card-img-top" alt="d.png">
+    <div class="card-body">
+      <h5 class="card-title">Letra D</h5>
+      <p class="card-text">Soy la letra D de Diario</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="vocal" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>E</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="../ABC_Laboratorio/img/e.png" class="card-img-top" alt="e.png">
+    <div class="card-body">
+      <h5 class="card-title">Letra E</h5>
+      <p class="card-text">Soy la letra E de Elefante</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>F</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="../ABC_Laboratorio/img/f.png" class="card-img-top" alt="f.png">
+    <div class="card-body">
+      <h5 class="card-title">Letra F</h5>
+      <p class="card-text">Soy la letra F de Flauta</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>G</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="../ABC_Laboratorio/img/g.png" class="card-img-top" alt="g.png">
+    <div class="card-body">
+      <h5 class="card-title">Letra G</h5>
+      <p class="card-text">Soy la letra G de Gato</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>H</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="../ABC_Laboratorio/img/h.png" class="card-img-top" alt="h.png">
+    <div class="card-body">
+      <h5 class="card-title">Letra H</h5>
+      <p class="card-text">Soy la letra H de Huevo</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="vocal" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>I</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="../ABC_Laboratorio/img/i.png" class="card-img-top" alt="i.png">
+    <div class="card-body">
+      <h5 class="card-title">Letra I</h5>
+      <p class="card-text">Soy la letra I de Iglú</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>J</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://cdn-icons-png.flaticon.com/512/9944/9944460.png" alt="letra j" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Letra J</h5>
+      <p class="card-text">Soy la letra J de Jaguar</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>K</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJGuvVt2D8QBqex9JWx5s7sAkI2e3U0n7Xdg&s" class="card-img-top" alt="letra K">
+    <div class="card-body">
+      <h5 class="card-title">Letra K</h5>
+      <p class="card-text">Soy la letra K de Karate</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>L</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://cdn-icons-png.flaticon.com/512/10914/10914952.png" class="card-img-top" alt="letra L">
+    <div class="card-body">
+      <h5 class="card-title">Letra L</h5>
+      <p class="card-text">Soy la letra L de Leer</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>M</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://cdn-icons-png.flaticon.com/512/9154/9154891.png" class="card-img-top" alt="Letra M">
+    <div class="card-body">
+      <h5 class="card-title">Letra M</h5>
+      <p class="card-text">Soy la letra M de Moto</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>N</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://cdn-icons-png.flaticon.com/512/11724/11724285.png" class="card-img-top" alt="Letra N">
+    <div class="card-body">
+      <h5 class="card-title">Letra N</h5>
+      <p class="card-text">Soy la letra N de Nutria</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+<div class="card" data-tipo="vocal" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>O</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://cdn-icons-png.flaticon.com/512/6575/6575231.png" class="card-img-top" alt="Letra O">
+    <div class="card-body">
+      <h5 class="card-title">Letra O</h5>
+      <p class="card-text">Soy la letra O de Opera</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>P</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://cdn-icons-png.flaticon.com/512/11724/11724294.png" class="card-img-top" alt="Letra P">
+    <div class="card-body">
+      <h5 class="card-title">Letra P</h5>
+      <p class="card-text">Soy la letra P de Papa</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>Q</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSawsFDD3ItfMNA8uqDoR4FhWH8iEjpqbGUOg&s" class="card-img-top" alt="Letra Q">
+    <div class="card-body">
+      <h5 class="card-title">Letra Q</h5>
+      <p class="card-text">Soy la letra Q de Queso</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>R</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://cdn-icons-png.flaticon.com/512/5697/5697518.png" class="card-img-top" alt="Letra R">
+    <div class="card-body">
+      <h5 class="card-title">Letra R</h5>
+      <p class="card-text">Soy la letra R de Reloj</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>S</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUZW4-jr5fwjXZ40XkEeipYz0f5siMr5SayA&s" class="card-img-top" alt="Sandía" />
+    <div class="card-body">
+      <h5 class="card-title">Letra S</h5>
+      <p class="card-text">Soy la letra S de Sandía</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>T</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://img.magnific.com/vector-gratis/pequeno-personaje-dibujos-animados-lindo-tigre_1308-138110.jpg?semt=ais_hybrid&w=740&q=80" class="card-img-top" alt="Tigre" />
+    <div class="card-body">
+      <h5 class="card-title">Letra T</h5>
+      <p class="card-text">Soy la letra T, de Tigre</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="vocal" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>U</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8S61CXQBUz_9VaIsbHyvZORnSSUwS86p8Sg&s" class="card-img-top" alt="Uva" />
+    <div class="card-body">
+      <h5 class="card-title">Letra U</h5>
+      <p class="card-text">Soy la letra U, de uva</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>V</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiZ0554NYnCFUpUx0AYLmnc0htakB7_evUbw&s" class="card-img-top" alt="Vaca" />
+    <div class="card-body">
+      <h5 class="card-title">Letra V</h5>
+      <p class="card-text">Soy la letra V, de vaca</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>W</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiJRdAU-eoCNewdkxOt-fE0ezE_Ji5utCYVg&s" class="card-img-top" alt="Waffle" />
+    <div class="card-body">
+      <h5 class="card-title">Letra W</h5>
+      <p class="card-text">Soy la letra W, de Waffle</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>X</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://png.pngtree.com/png-vector/20260102/ourlarge/pngtree-colorful-cartoon-xylophone-character-happily-playing-music-with-mallets-in-a-png-image_18392667.webp" class="card-img-top" alt="Xilófono" />
+    <div class="card-body">
+      <h5 class="card-title">Letra X</h5>
+      <p class="card-text">Soy la letra X, de Xilófono</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>Y</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXg5B3gt69sNivHB-wl_l6CcjMQKcbvLdUZA&s" class="card-img-top" alt="Yoyo" />
+    <div class="card-body">
+      <h5 class="card-title">Letra Y</h5>
+      <p class="card-text">Soy la letra Y, de Yoyo</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<div class="card" data-tipo="consonante" onclick="voltear(this)">
+  <div class="card-frente">
+    <h1>Z</h1>
+  </div>
+  <div class="card-dorso">
+    <img src="https://img.magnific.com/vector-premium/adorable-ilustracion-vectorial-dibujos-animados-zapatos-bebes-estilo-moda_1263357-15636.jpg?semt=ais_hybrid&w=740&q=80" class="card-img-top" alt="Zapato" />
+    <div class="card-body">
+      <h5 class="card-title">Letra Z</h5>
+      <p class="card-text">Soy la letra Z, de zapato</p>
+      <button class="btn btn-primary w-100">Voltear</button>
+    </div>
+  </div>
+</div>
+
+<section class="container my-5">
+  <h2 class="text-center"> Equipo numero 2</h2>
+  <div class="row justify-content-center mt-4 g-3">
+    <div class="col-auto">
+      <div class="card p-3 text-center">
+        <p class="fw-bold mb-0">Alejandra Corredor</p>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="card p-3 text-center">
+        <p class="fw-bold mb-0">Luis Imbachi</p>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="card p-3 text-center">
+        <p class="fw-bold mb-0">Manuel Caballero</p>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="card p-3 text-center">
+        <p class="fw-bold mb-0">Sebastian Angulo</p>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="card p-3 text-center">
+        <p class="fw-bold mb-0">Alexandra Castro</p>
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="card p-3 text-center">
+        <p class="fw-bold mb-0">Nicolas Pirajan</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEfYxKxG0FVlsJL5pNlyT2bRjXh0JMhjY6hW+ALEwIH memudahkan+nvJaDHga3lsp4nC" crossorigin="anonymous"></script>
